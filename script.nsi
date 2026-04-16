@@ -29,10 +29,13 @@ Section "Instalar"
 
   ; Crear acceso directo en escritorio
 CreateShortcut "$DESKTOP\LeerTXT.lnk" "javaw.exe" "-jar $INSTDIR\Fuentes_Tarea_U07.jar"
-
+;CreateShortcut "$DESKTOP\LeerTXT.lnk" "javaw.exe" "-jar $INSTDIR\LeerTXT\Fuentes_Tarea_U07.jar"
+  
   ; Crear acceso en menú inicio
   CreateDirectory "$SMPROGRAMS\LeerTXT"
 CreateShortcut "$SMPROGRAMS\LeerTXT\LeerTXT.lnk" "javaw.exe" "-jar $INSTDIR\Fuentes_Tarea_U07.jar"
+;CreateShortcut "$SMPROGRAMS\LeerTXT\LeerTXT.lnk" "javaw.exe" "-jar $INSTDIR\LeerTXT\Fuentes_Tarea_U07.jar"
+
   ; Crear desinstalador
   WriteUninstaller "$INSTDIR\uninstall.exe"
 
